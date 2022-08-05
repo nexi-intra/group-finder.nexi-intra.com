@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
-  <Id>c0a08380-d972-477a-bac1-97962a94ad6f</Id>
+  <Id>f7a1d82c-e56b-4c3b-8f5a-2148dbf6a263</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Nexi Group</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Group Finder"/>
   <Description DefaultValue="Office Add-In for finding the right group of People"/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-128.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -44,7 +44,7 @@
         <DesktopFormFactor>
           <FunctionFile resid="Commands.Url"/> <!--New Extension Point - Module for a ModuleApp -->
 
-          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+          <ExtensionPoint xsi:type="MessageComposeCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="msgReadGroup">
                 <Label resid="GroupLabel"/>
@@ -88,56 +88,27 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/icon-80.png"/>
-
-        <bt:Image id="residAddinIcon16" 
-        DefaultValue="https://localhost:8080/Executive-16.png" />
-<bt:Image id="residAddinIcon32" 
-        DefaultValue="https://localhost:8080/Executive-32.png" />
-<bt:Image id="residAddinIcon80" 
-        DefaultValue="https://localhost:8080/Executive-80.png" />
-
-<bt:Image id="residAssociateIcon16" 
-        DefaultValue="https://localhost:8080/Associate-16.png" />
-<bt:Image id="residAssociateIcon32" 
-        DefaultValue="https://localhost:8080/Associate-32.png" />
-<bt:Image id="residAssociateIcon80" 
-        DefaultValue="https://localhost:8080/Associate-80.png" />
-      </bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-80.png"/>
+    </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/>
 
-        <bt:Url id="residFunctionFileUrl" 
-        DefaultValue="https://localhost:8080/" />
-<bt:Url id="residExtensionPointUrl" 
-        DefaultValue="https://localhost:8080/" />
+        
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="GroupLabel" DefaultValue="Nexi"/>
+        <bt:String id="GroupLabel" DefaultValue="Nexi DEV"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Group Finder"/>
         <bt:String id="ActionButton.Label" DefaultValue="Perform an action"/>
 
-        <bt:String id="residExtensionPointLabel" 
-                    DefaultValue="Billable Hours" />
-        <bt:String id="residGroupLabel" 
-                    DefaultValue="Change billing rate" />
-        <bt:String id="residCustomTabLabel" 
-                    DefaultValue="Billable hours" />
-
-        <bt:String id="residChangeToAssociateLabel" 
-                    DefaultValue="Associate" />
+        
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Opens a pane displaying all available properties."/>
         <bt:String id="ActionButton.Tooltip" DefaultValue="Perform an action when clicked."/>
-        <bt:String id="residVersionOverrideDesc" 
-        DefaultValue="Version override description" />
-
-<bt:String id="residChangeToAssociateDesc" 
-        DefaultValue="Change to the associate billing rate: $127/hr" />
+        
       </bt:LongStrings>
 
    

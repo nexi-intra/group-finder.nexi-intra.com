@@ -4,10 +4,10 @@
   <Version>1.0.0.1</Version>
   <ProviderName>Nexi Group</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Group Finder"/>
+  <DisplayName DefaultValue="Group Finder (PREVIEW)"/>
   <Description DefaultValue="Office Add-In for finding the right group of People"/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-128.png"/>
+  <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -43,7 +43,6 @@
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
           <FunctionFile resid="Commands.Url"/> <!--New Extension Point - Module for a ModuleApp -->
-
           <ExtensionPoint xsi:type="MessageComposeCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="msgReadGroup">
@@ -63,7 +62,7 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
-                <Control xsi:type="Button" id="msgReadOpenInfocastButton">
+                <!-- <Control xsi:type="Button" id="msgReadOpenInfocastButton">
                   <Label resid="InfocastButton.Label"/>
                   <Supertip>
                     <Title resid="InfocastButton.Label"/>
@@ -77,7 +76,61 @@
                   <Action xsi:type="ShowTaskpane">
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
+                </Control> -->
+                <!--
+                <Control xsi:type="Button" id="ActionButton">
+                  <Label resid="ActionButton.Label"/>
+                  <Supertip>
+                    <Title resid="ActionButton.Label"/>
+                    <Description resid="ActionButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>action</FunctionName>
+                  </Action>
                 </Control>
+              -->
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+          <ExtensionPoint xsi:type="AppointmentOrganizerCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="msgReadGroup2">
+                <Label resid="GroupLabel"/>
+                <Control xsi:type="Button" id="msgReadOpenPaneButton2">
+                  <Label resid="TaskpaneButton.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+                <!-- <Control xsi:type="Button" id="msgReadOpenInfocastButton">
+                  <Label resid="InfocastButton.Label"/>
+                  <Supertip>
+                    <Title resid="InfocastButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="InfocastIcon.80x80"/>
+                    <bt:Image size="32" resid="InfocastIcon.80x80"/>
+                    <bt:Image size="80" resid="InfocastIcon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control> -->
                 <!--
                 <Control xsi:type="Button" id="ActionButton">
                   <Label resid="ActionButton.Label"/>
@@ -103,10 +156,10 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-80.png"/>
-        <bt:Image id="InfocastIcon.80x80" DefaultValue="https://www.contoso.com/assets/infocast.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+        <bt:Image id="InfocastIcon.80x80" DefaultValue="https://www.contoso.com/assets/infocast2.png"/>
 
       </bt:Images>
       <bt:Urls>

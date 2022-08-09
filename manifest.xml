@@ -63,6 +63,21 @@
                     <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
+                <Control xsi:type="Button" id="msgReadOpenInfocastButton">
+                  <Label resid="InfocastButton.Label"/>
+                  <Supertip>
+                    <Title resid="InfocastButton.Label"/>
+                    <Description resid="TaskpaneButton.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="InfocastIcon.80x80"/>
+                    <bt:Image size="32" resid="InfocastIcon.80x80"/>
+                    <bt:Image size="80" resid="InfocastIcon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
                 <!--
                 <Control xsi:type="Button" id="ActionButton">
                   <Label resid="ActionButton.Label"/>
@@ -91,7 +106,9 @@
         <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-16.png"/>
         <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-32.png"/>
         <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v2-icon-80.png"/>
-    </bt:Images>
+        <bt:Image id="InfocastIcon.80x80" DefaultValue="https://www.contoso.com/assets/infocast.png"/>
+
+      </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://www.contoso.com/commands.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://www.contoso.com/taskpane.html"/>
@@ -101,6 +118,7 @@
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Nexi DEV"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Group Finder"/>
+        <bt:String id="InfocastButton.Label" DefaultValue="Infocast"/>
         <bt:String id="ActionButton.Label" DefaultValue="Perform an action"/>
 
         

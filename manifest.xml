@@ -4,7 +4,7 @@
   <Version>1.0.0.1</Version>
   <ProviderName>Nexi Group</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Group Finder (PREVIEW)"/>
+  <DisplayName DefaultValue="Group Finder (PREVIEW DEV)"/>
   <Description DefaultValue="Office Add-In for finding the right group of People"/>
   <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
   <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>

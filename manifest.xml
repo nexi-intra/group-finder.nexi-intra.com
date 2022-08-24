@@ -6,11 +6,11 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Group Finder (PREVIEW DEV)"/>
   <Description DefaultValue="Office Add-In for finding the right group of People"/>
-  <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
-  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+  <IconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v4-dev.png"/>
+  <HighResolutionIconUrl DefaultValue="https://www.contoso.com/assets/groupfinder-v4-dev.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
-    <AppDomain>https://www.contoso.com</AppDomain>
+    <AppDomain>https://apps.powerapps.com</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -156,9 +156,9 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v3.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://www.contoso.com/assets/groupfinder-v4-dev.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://www.contoso.com/assets/groupfinder-v4-dev.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://www.contoso.com/assets/groupfinder-v4-dev.png"/>
         <bt:Image id="InfocastIcon.80x80" DefaultValue="https://www.contoso.com/assets/infocast2.png"/>
 
       </bt:Images>

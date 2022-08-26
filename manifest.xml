@@ -186,9 +186,8 @@
       <Scopes>
         <Scope>openid</Scope>
         <Scope>profile</Scope>
-        <Scope>offline_access</Scope>
-        <Scope>files.readwrite</Scope>
-        <Scope>mail.read</Scope>
+        <Scope>User.Read</Scope>
+        <Scope>Files.Read</Scope>
       </Scopes>
     </WebApplicationInfo>
   </VersionOverrides>
